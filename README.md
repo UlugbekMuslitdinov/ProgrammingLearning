@@ -1,5 +1,25 @@
-# Learn Programming with Ulugbek Muslitdinov
+# Initial page
 
-## In this repository yoiu can find a lot of useful information about how to start programming. Also there will be a lot of resources like free books or links to tutorials, where you can easily download some videos.
+## Getting Super Powers
 
-## More information you can find in my [GitBook]()
+Becoming a super hero is a fairly straight forward process:
+
+```
+$ give me super-powers
+```
+
+{% hint style="info" %}
+ Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+{% endhint %}
+
+Once you're strong enough, save the world:
+
+{% code title="hello.sh" %}
+```bash
+# Ain't no code for that yet, sorry
+echo 'You got to trust me on this, I saved the world'
+```
+{% endcode %}
+
+
+
