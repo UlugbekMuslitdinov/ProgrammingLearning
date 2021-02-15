@@ -1,4 +1,6 @@
-import telebot
+import telebot 
+
+
 token = '1586246356:AAEAwFmyu4PckC-RmlmNVGre-JVXpvVCzHk'
 bot = telebot.TeleBot(token)
 
@@ -8,7 +10,7 @@ def log(message, answer):
     print("\n =====")
     from datetime import datetime
     print(datetime.now())
-    print("Message from [0] [1] \n Text - [3]".format(message.from_user.first_name, message.from_user.last_name, str(message.from_user.id), message.text))
+    print("Message from (0) (1) . (id = (2)) \n Text - (3)".format(message.from_user.first_name, message.from_user.last_name, str(message.from_user.id), message.text))
     print(answer)
 
 
@@ -21,12 +23,16 @@ def handle_text(message):
     answer = "You can't play it"
     if message.text == 'a':
         answer = "B"
+        bot.send_message(message.chat.id, answer)
         log(message, answer)
-        bot.send_message(message.chat.id, 'no hi')
+        
     elif message.text == 'b':
-        answer = "B"
+        answer = "hi"
+        bot.send_message(message.chat.id, answer)
         log(message, answer)
-        bot.send_message(message.chat.id, 'you sent b')
+    else:
+        bot.send_message(message.chat.id, "Oh, you're wrong")
+        log(message, answer)
 
 
 
